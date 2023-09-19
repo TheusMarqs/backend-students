@@ -19,9 +19,9 @@ public class Student implements Serializable{
     @Column(length = 1024,nullable = false,  name ="student_name")
     private String name;
  
-    private String turma;
+    private String school;
 
-    private String semestre;
+    private String semester;
     
     private String cpf;
 
@@ -41,20 +41,20 @@ public class Student implements Serializable{
         this.name = name;
     }
 
-    public String getTurma() {
-        return turma;
+    public String getSchool() {
+        return school;
     }
 
-    public void setTurma(String turma) {
-        this.turma = turma;
+    public void setSchool(String school) {
+        this.school = school;
     }
 
-    public String getSemestre() {
-        return semestre;
+    public String getSemester() {
+        return semester;
     }
 
-    public void setSemestre(String semestre) {
-        this.semestre = semestre;
+    public void setSemester(String semester) {
+        this.semester = semester;
     }
 
     public String getCpf() {
