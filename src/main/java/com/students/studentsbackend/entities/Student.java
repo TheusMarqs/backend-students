@@ -16,10 +16,10 @@ public class Student implements Serializable{
     @GeneratedValue(strategy = GenerationType.IDENTITY)
     private Long id;
 
-    @Column(length = 1024,nullable = false,  name ="student_name")
+    @Column(length = 50,nullable = false,  name ="student_name")
     private String name;
  
-    private String school;
+    private String school_class;
 
     private String semester;
     
@@ -41,12 +41,12 @@ public class Student implements Serializable{
         this.name = name;
     }
 
-    public String getSchool() {
-        return school;
+    public String getSchool_class() {
+        return school_class;
     }
 
-    public void setSchool(String school) {
-        this.school = school;
+    public void setSchool_class(String school_class) {
+        this.school_class = school_class;
     }
 
     public String getSemester() {

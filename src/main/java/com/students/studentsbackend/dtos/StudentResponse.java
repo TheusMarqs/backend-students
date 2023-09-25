@@ -5,7 +5,7 @@ public record StudentResponse(
     String name,
     String cpf,
     String semester,
-    String school
-)
-{    
+    String school_class
+)  {
+    
 }
